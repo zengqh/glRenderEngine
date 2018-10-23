@@ -1,0 +1,11 @@
+#ifndef NV_CONST_H
+#define NV_CONST_H
+
+#define NV_PI           float(3.1415926535897932384626433832795)
+#define NV_2_PI         float(3.1415926535897932384626433832795 * 2.0)
+#define NV_PI_2         float(3.1415926535897932384626433832795 * 0.5)
+#define NV_FLT_MAX      3.402823466e+38F
+#define NV_FLT_EPSILON  1e-5F
+
+#endif
+

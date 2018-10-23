@@ -1,0 +1,1407 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="io">
+      <UniqueIdentifier>{16ebdef7-875b-4291-aaff-3d4be49b8e84}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="image">
+      <UniqueIdentifier>{61b53d43-456a-4f56-b586-c61d5ca130e4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="math">
+      <UniqueIdentifier>{e394e56e-44eb-4a43-957b-25ae1df8f317}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="math\poly2tri">
+      <UniqueIdentifier>{5efb4f59-efd6-445f-b522-66e7b94d23bd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="platform">
+      <UniqueIdentifier>{25054c3f-145f-4b75-9306-30090a2849a1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="platform\pthread_win32">
+      <UniqueIdentifier>{22bd65b7-7f9f-4637-b08f-8f56cdb2b31d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include">
+      <UniqueIdentifier>{7139deda-e3ea-4291-9c11-8dee909ce625}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gl_render_system">
+      <UniqueIdentifier>{8ac94951-246f-4cb5-9273-f74214e6ab41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="scene">
+      <UniqueIdentifier>{cb485b2c-eaeb-4b42-a2a4-9b47619daa1e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="render_pipeline">
+      <UniqueIdentifier>{60715fb9-e4f6-45db-884b-6dc2fe3104ca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="global">
+      <UniqueIdentifier>{7dc98d12-8db8-4a62-a9ab-49d1a2364587}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="resource">
+      <UniqueIdentifier>{aebbcb57-cfb1-4137-aae4-654adab75b28}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="bullet">
+      <UniqueIdentifier>{a3a7d9ea-67ff-4ade-95a0-fc503b27bcdc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="physics">
+      <UniqueIdentifier>{456a31c8-755e-46f0-a117-6671b2c1dbd9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="stan_hull">
+      <UniqueIdentifier>{dfbcd31b-e0ed-4bb3-bd43-39f8a52d1455}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="post_effects">
+      <UniqueIdentifier>{c05e1d1c-ff4d-4159-8ce1-c3d54af5f534}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="font">
+      <UniqueIdentifier>{b1de59f3-1767-4375-86b3-7df5dc9267dd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="font\util">
+      <UniqueIdentifier>{6bf7a4f6-e06a-4b84-b4dd-5914e35d9137}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="font\freetype2">
+      <UniqueIdentifier>{e4099fa0-f06b-4146-9006-a96b6cacac8a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="font\freetype2\FT_MODULES">
+      <UniqueIdentifier>{72dc87ef-2e61-4e95-91ed-a15ee0a7cbed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="profiler">
+      <UniqueIdentifier>{65f35a61-3376-4fb3-bcda-8ee211c708ec}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\io\enn_deserializer.cpp">
+      <Filter>io</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\io\enn_file.cpp">
+      <Filter>io</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\io\enn_file_system.cpp">
+      <Filter>io</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\io\enn_memory_buffer.cpp">
+      <Filter>io</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\io\enn_serializer.cpp">
+      <Filter>io</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\image\enn_image.cpp">
+      <Filter>image</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\image\enn_jo_jpeg.cpp">
+      <Filter>image</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\image\enn_stb_image.c">
+      <Filter>image</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\image\enn_stb_image_write.c">
+      <Filter>image</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\image\enn_stb_vorbis.c">
+      <Filter>image</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\math\enn_axis_aligned_box.cpp">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\math\enn_color.cpp">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\math\enn_frustum.cpp">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\math\enn_math_def.cpp">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\math\enn_matrix3.cpp">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\math\enn_matrix4.cpp">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\math\enn_object_aligned_box.cpp">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\math\enn_plane.cpp">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\math\enn_plane_bounded_volume.cpp">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\math\enn_quaternion.cpp">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\math\enn_ray.cpp">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\math\enn_rect.cpp">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\math\enn_sphere.cpp">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\math\enn_string_util.cpp">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\math\enn_vector2.cpp">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\math\enn_vector3.cpp">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\math\enn_vector4.cpp">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\math\poly2tri\sweep\advancing_front.cc">
+      <Filter>math\poly2tri</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\math\poly2tri\sweep\cdt.cc">
+      <Filter>math\poly2tri</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\math\poly2tri\common\shapes.cc">
+      <Filter>math\poly2tri</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\math\poly2tri\sweep\sweep.cc">
+      <Filter>math\poly2tri</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\math\poly2tri\sweep\sweep_context.cc">
+      <Filter>math\poly2tri</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\platform\enn_memory.cpp">
+      <Filter>platform</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\platform\enn_memory_alloc.cpp">
+      <Filter>platform</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\platform\enn_memory_track.cpp">
+      <Filter>platform</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\platform\enn_msg_queue.cpp">
+      <Filter>platform</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\platform\enn_object_recycle.cpp">
+      <Filter>platform</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\platform\enn_thread.cpp">
+      <Filter>platform</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\platform\enn_timer.cpp">
+      <Filter>platform</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\platform\enn_windows_platform.cpp">
+      <Filter>platform</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\platform\enn_work_queue.cpp">
+      <Filter>platform</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\platform\pthread_win32\pthread.c">
+      <Filter>platform\pthread_win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\gl_render_system\enn_gl_frame_buffer.cpp">
+      <Filter>gl_render_system</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\gl_render_system\enn_gl_gpu_buffer.cpp">
+      <Filter>gl_render_system</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\gl_render_system\enn_gl_ib.cpp">
+      <Filter>gl_render_system</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\gl_render_system\enn_gl_interface.cpp">
+      <Filter>gl_render_system</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\gl_render_system\enn_gl_program.cpp">
+      <Filter>gl_render_system</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\gl_render_system\enn_gl_render_buffer.cpp">
+      <Filter>gl_render_system</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\gl_render_system\enn_gl_render_system.cpp">
+      <Filter>gl_render_system</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\gl_render_system\enn_gl_render_target.cpp">
+      <Filter>gl_render_system</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\gl_render_system\enn_gl_rtt_pool.cpp">
+      <Filter>gl_render_system</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\gl_render_system\enn_gl_texture_obj.cpp">
+      <Filter>gl_render_system</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\gl_render_system\enn_gl_vb.cpp">
+      <Filter>gl_render_system</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\gl_render_system\GLee5_4\GLee.c">
+      <Filter>gl_render_system</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\scene\enn_camera.cpp">
+      <Filter>scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\scene\enn_camera_node.cpp">
+      <Filter>scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\scene\enn_light.cpp">
+      <Filter>scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\scene\enn_light_node.cpp">
+      <Filter>scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\scene\enn_mesh_node.cpp">
+      <Filter>scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\scene\enn_node.cpp">
+      <Filter>scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\scene\enn_scene_find.cpp">
+      <Filter>scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\scene\enn_scene_manager.cpp">
+      <Filter>scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\scene\enn_scene_node.cpp">
+      <Filter>scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\scene\enn_shadow.cpp">
+      <Filter>scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\scene\enn_skybox_scene_data.cpp">
+      <Filter>scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\scene\enn_viewport.cpp">
+      <Filter>scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\scene\enn_water_plane.cpp">
+      <Filter>scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\scene\enn_water_plane_node.cpp">
+      <Filter>scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\render_pipeline\enn_begin_pass.cpp">
+      <Filter>render_pipeline</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\render_pipeline\enn_default_effect_template.cpp">
+      <Filter>render_pipeline</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\render_pipeline\enn_effect_template.cpp">
+      <Filter>render_pipeline</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\render_pipeline\enn_effect_template_manager.cpp">
+      <Filter>render_pipeline</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\render_pipeline\enn_end_pass.cpp">
+      <Filter>render_pipeline</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\render_pipeline\enn_forward_effect_template.cpp">
+      <Filter>render_pipeline</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\render_pipeline\enn_gbuffer_effect_template.cpp">
+      <Filter>render_pipeline</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\render_pipeline\enn_gbuffer_pass.cpp">
+      <Filter>render_pipeline</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\render_pipeline\enn_general_render_pass.cpp">
+      <Filter>render_pipeline</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\render_pipeline\enn_helper_pass.cpp">
+      <Filter>render_pipeline</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\render_pipeline\enn_light_buffer_pass.cpp">
+      <Filter>render_pipeline</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\render_pipeline\enn_litacc_effect_template.cpp">
+      <Filter>render_pipeline</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\render_pipeline\enn_omnidirectional_shadow_map.cpp">
+      <Filter>render_pipeline</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\render_pipeline\enn_plane_reflect_pass.cpp">
+      <Filter>render_pipeline</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\render_pipeline\enn_post_system_pass.cpp">
+      <Filter>render_pipeline</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\render_pipeline\enn_pre_z_pass.cpp">
+      <Filter>render_pipeline</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\render_pipeline\enn_render_pass_base.cpp">
+      <Filter>render_pipeline</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\render_pipeline\enn_render_pipe.cpp">
+      <Filter>render_pipeline</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\render_pipeline\enn_scattering_sky_pass.cpp">
+      <Filter>render_pipeline</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\render_pipeline\enn_shadow_pre_pass.cpp">
+      <Filter>render_pipeline</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\render_pipeline\enn_shadowpre_effect_template.cpp">
+      <Filter>render_pipeline</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\render_pipeline\enn_simple_ssao_pass.cpp">
+      <Filter>render_pipeline</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\render_pipeline\enn_skybox_pass.cpp">
+      <Filter>render_pipeline</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\render_pipeline\enn_skydome_pass.cpp">
+      <Filter>render_pipeline</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\render_pipeline\enn_uirect_effect_template.cpp">
+      <Filter>render_pipeline</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\render_pipeline\enn_water_pass.cpp">
+      <Filter>render_pipeline</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\global\enn_root.cpp">
+      <Filter>global</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\resource\enn_animation.cpp">
+      <Filter>resource</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\resource\enn_material.cpp">
+      <Filter>resource</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\resource\enn_mesh.cpp">
+      <Filter>resource</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\resource\enn_mesh_fullscreen_creator.cpp">
+      <Filter>resource</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\resource\enn_mesh_manager.cpp">
+      <Filter>resource</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\resource\enn_mesh_manual_creator.cpp">
+      <Filter>resource</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\resource\enn_mesh_mqo_txt_creator.cpp">
+      <Filter>resource</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\resource\enn_mesh_poly_creator.cpp">
+      <Filter>resource</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\resource\enn_mesh_screen_mesh.cpp">
+      <Filter>resource</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\resource\enn_resource.cpp">
+      <Filter>resource</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\resource\enn_resource_manager.cpp">
+      <Filter>resource</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\resource\enn_texture.cpp">
+      <Filter>resource</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\resource\enn_texture_manager.cpp">
+      <Filter>resource</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\bullet\BulletCollision\CollisionDispatch\btActivatingCollisionAlgorithm.cpp">
+      <Filter>bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\bullet\LinearMath\btAlignedAllocator.cpp">
+      <Filter>bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\bullet\BulletCollision\BroadphaseCollision\btAxisSweep3.cpp">
+      <Filter>bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\bullet\BulletCollision\CollisionDispatch\btBox2dBox2dCollisionAlgorithm.cpp">
+      <Filter>bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\bullet\BulletCollision\CollisionShapes\btBox2dShape.cpp">
+      <Filter>bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\bullet\BulletCollision\CollisionDispatch\btBoxBoxCollisionAlgorithm.cpp">
+      <Filter>bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\bullet\BulletCollision\CollisionDispatch\btBoxBoxDetector.cpp">
+      <Filter>bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\bullet\BulletCollision\CollisionShapes\btBoxShape.cpp">
+      <Filter>bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\bullet\BulletCollision\BroadphaseCollision\btBroadphaseProxy.cpp">
+      <Filter>bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\bullet\BulletCollision\CollisionShapes\btBvhTriangleMeshShape.cpp">
+      <Filter>bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\bullet\BulletCollision\CollisionShapes\btCapsuleShape.cpp">
+      <Filter>bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\bullet\BulletCollision\BroadphaseCollision\btCollisionAlgorithm.cpp">
+      <Filter>bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\bullet\BulletCollision\CollisionDispatch\btCollisionDispatcher.cpp">
+      <Filter>bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\bullet\BulletCollision\CollisionDispatch\btCollisionObject.cpp">
+      <Filter>bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\bullet\BulletCollision\CollisionShapes\btCollisionShape.cpp">
+      <Filter>bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\bullet\BulletCollision\CollisionDispatch\btCollisionWorld.cpp">
+      <Filter>bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\bullet\BulletCollision\CollisionDispatch\btCompoundCollisionAlgorithm.cpp">
+      <Filter>bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\bullet\BulletCollision\CollisionShapes\btCompoundShape.cpp">
+      <Filter>bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\bullet\BulletCollision\CollisionShapes\btConcaveShape.cpp">
+      <Filter>bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\bullet\BulletCollision\CollisionShapes\btConeShape.cpp">
+      <Filter>bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\bullet\BulletDynamics\ConstraintSolver\btConeTwistConstraint.cpp">
+      <Filter>bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\bullet\BulletDynamics\ConstraintSolver\btContactConstraint.cpp">
+      <Filter>bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\bullet\BulletCollision\Gimpact\btContactProcessing.cpp">
+      <Filter>bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\bullet\BulletCollision\NarrowPhaseCollision\btContinuousConvexCollision.cpp">
+      <Filter>bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\bullet\BulletCollision\CollisionDispatch\btConvex2dConvex2dAlgorithm.cpp">
+      <Filter>bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\bullet\BulletCollision\CollisionShapes\btConvex2dShape.cpp">
+      <Filter>bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\bullet\BulletCollision\NarrowPhaseCollision\btConvexCast.cpp">
+      <Filter>bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\bullet\BulletCollision\CollisionDispatch\btConvexConcaveCollisionAlgorithm.cpp">
+      <Filter>bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\bullet\BulletCollision\CollisionDispatch\btConvexConvexAlgorithm.cpp">
+      <Filter>bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\bullet\LinearMath\btConvexHull.cpp">
+      <Filter>bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\bullet\LinearMath\btConvexHullComputer.cpp">
+      <Filter>bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\bullet\BulletCollision\CollisionShapes\btConvexHullShape.cpp">
+      <Filter>bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\bullet\BulletCollision\CollisionShapes\btConvexInternalShape.cpp">
+      <Filter>bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\bullet\BulletCollision\CollisionDispatch\btConvexPlaneCollisionAlgorithm.cpp">
+      <Filter>bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\bullet\BulletCollision\CollisionShapes\btConvexPointCloudShape.cpp">
+      <Filter>bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\bullet\BulletCollision\CollisionShapes\btConvexPolyhedron.cpp">
+      <Filter>bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\bullet\BulletCollision\CollisionShapes\btConvexShape.cpp">
+      <Filter>bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\bullet\BulletCollision\CollisionShapes\btConvexTriangleMeshShape.cpp">
+      <Filter>bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\bullet\BulletCollision\CollisionShapes\btCylinderShape.cpp">
+      <Filter>bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\bullet\BulletCollision\BroadphaseCollision\btDbvt.cpp">
+      <Filter>bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\bullet\BulletCollision\BroadphaseCollision\btDbvtBroadphase.cpp">
+      <Filter>bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\bullet\BulletCollision\CollisionDispatch\btDefaultCollisionConfiguration.cpp">
+      <Filter>bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\bullet\BulletSoftBody\btDefaultSoftBodySolver.cpp">
+      <Filter>bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\bullet\BulletDynamics\Dynamics\btDiscreteDynamicsWorld.cpp">
+      <Filter>bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\bullet\BulletCollision\BroadphaseCollision\btDispatcher.cpp">
+      <Filter>bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\bullet\BulletCollision\CollisionDispatch\btEmptyCollisionAlgorithm.cpp">
+      <Filter>bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\bullet\BulletCollision\CollisionShapes\btEmptyShape.cpp">
+      <Filter>bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\bullet\BulletDynamics\ConstraintSolver\btGearConstraint.cpp">
+      <Filter>bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\bullet\BulletDynamics\ConstraintSolver\btGeneric6DofConstraint.cpp">
+      <Filter>bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\bullet\BulletDynamics\ConstraintSolver\btGeneric6DofSpringConstraint.cpp">
+      <Filter>bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\bullet\BulletCollision\Gimpact\btGenericPoolAllocator.cpp">
+      <Filter>bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\bullet\LinearMath\btGeometryUtil.cpp">
+      <Filter>bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\bullet\BulletCollision\CollisionDispatch\btGhostObject.cpp">
+      <Filter>bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\bullet\BulletCollision\Gimpact\btGImpactBvh.cpp">
+      <Filter>bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\bullet\BulletCollision\Gimpact\btGImpactCollisionAlgorithm.cpp">
+      <Filter>bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\bullet\BulletCollision\Gimpact\btGImpactQuantizedBvh.cpp">
+      <Filter>bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\bullet\BulletCollision\Gimpact\btGImpactShape.cpp">
+      <Filter>bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\bullet\BulletCollision\NarrowPhaseCollision\btGjkConvexCast.cpp">
+      <Filter>bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\bullet\BulletCollision\NarrowPhaseCollision\btGjkEpa2.cpp">
+      <Filter>bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\bullet\BulletCollision\NarrowPhaseCollision\btGjkEpaPenetrationDepthSolver.cpp">
+      <Filter>bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\bullet\BulletCollision\NarrowPhaseCollision\btGjkPairDetector.cpp">
+      <Filter>bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\bullet\BulletCollision\CollisionShapes\btHeightfieldTerrainShape.cpp">
+      <Filter>bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\bullet\BulletDynamics\ConstraintSolver\btHinge2Constraint.cpp">
+      <Filter>bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\bullet\BulletDynamics\ConstraintSolver\btHingeConstraint.cpp">
+      <Filter>bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\bullet\BulletCollision\CollisionDispatch\btInternalEdgeUtility.cpp">
+      <Filter>bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\bullet\BulletDynamics\Character\btKinematicCharacterController.cpp">
+      <Filter>bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\bullet\BulletCollision\CollisionDispatch\btManifoldResult.cpp">
+      <Filter>bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\bullet\BulletCollision\NarrowPhaseCollision\btMinkowskiPenetrationDepthSolver.cpp">
+      <Filter>bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\bullet\BulletCollision\CollisionShapes\btMinkowskiSumShape.cpp">
+      <Filter>bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\bullet\BulletCollision\CollisionShapes\btMultimaterialTriangleMeshShape.cpp">
+      <Filter>bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\bullet\BulletCollision\BroadphaseCollision\btMultiSapBroadphase.cpp">
+      <Filter>bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\bullet\BulletCollision\CollisionShapes\btMultiSphereShape.cpp">
+      <Filter>bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\bullet\BulletCollision\CollisionShapes\btOptimizedBvh.cpp">
+      <Filter>bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\bullet\BulletCollision\BroadphaseCollision\btOverlappingPairCache.cpp">
+      <Filter>bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\bullet\BulletCollision\NarrowPhaseCollision\btPersistentManifold.cpp">
+      <Filter>bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\bullet\BulletDynamics\ConstraintSolver\btPoint2PointConstraint.cpp">
+      <Filter>bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\bullet\LinearMath\btPolarDecomposition.cpp">
+      <Filter>bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\bullet\BulletCollision\NarrowPhaseCollision\btPolyhedralContactClipping.cpp">
+      <Filter>bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\bullet\BulletCollision\CollisionShapes\btPolyhedralConvexShape.cpp">
+      <Filter>bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\bullet\BulletCollision\BroadphaseCollision\btQuantizedBvh.cpp">
+      <Filter>bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\bullet\LinearMath\btQuickprof.cpp">
+      <Filter>bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\bullet\BulletCollision\NarrowPhaseCollision\btRaycastCallback.cpp">
+      <Filter>bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\bullet\BulletDynamics\Vehicle\btRaycastVehicle.cpp">
+      <Filter>bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\bullet\BulletDynamics\Dynamics\btRigidBody.cpp">
+      <Filter>bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\bullet\BulletCollision\CollisionShapes\btScaledBvhTriangleMeshShape.cpp">
+      <Filter>bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\bullet\BulletDynamics\ConstraintSolver\btSequentialImpulseConstraintSolver.cpp">
+      <Filter>bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\bullet\LinearMath\btSerializer.cpp">
+      <Filter>bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\bullet\BulletCollision\CollisionShapes\btShapeHull.cpp">
+      <Filter>bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\bullet\BulletCollision\BroadphaseCollision\btSimpleBroadphase.cpp">
+      <Filter>bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\bullet\BulletDynamics\Dynamics\btSimpleDynamicsWorld.cpp">
+      <Filter>bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\bullet\BulletCollision\CollisionDispatch\btSimulationIslandManager.cpp">
+      <Filter>bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\bullet\BulletDynamics\ConstraintSolver\btSliderConstraint.cpp">
+      <Filter>bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\bullet\BulletSoftBody\btSoftBody.cpp">
+      <Filter>bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\bullet\BulletSoftBody\btSoftBodyConcaveCollisionAlgorithm.cpp">
+      <Filter>bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\bullet\BulletSoftBody\btSoftBodyHelpers.cpp">
+      <Filter>bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\bullet\BulletSoftBody\btSoftBodyRigidBodyCollisionConfiguration.cpp">
+      <Filter>bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\bullet\BulletSoftBody\btSoftRigidCollisionAlgorithm.cpp">
+      <Filter>bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\bullet\BulletSoftBody\btSoftRigidDynamicsWorld.cpp">
+      <Filter>bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\bullet\BulletSoftBody\btSoftSoftCollisionAlgorithm.cpp">
+      <Filter>bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\bullet\BulletDynamics\ConstraintSolver\btSolve2LinearConstraint.cpp">
+      <Filter>bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\bullet\BulletCollision\CollisionDispatch\btSphereBoxCollisionAlgorithm.cpp">
+      <Filter>bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\bullet\BulletCollision\CollisionShapes\btSphereShape.cpp">
+      <Filter>bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\bullet\BulletCollision\CollisionDispatch\btSphereSphereCollisionAlgorithm.cpp">
+      <Filter>bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\bullet\BulletCollision\CollisionDispatch\btSphereTriangleCollisionAlgorithm.cpp">
+      <Filter>bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\bullet\BulletCollision\CollisionShapes\btStaticPlaneShape.cpp">
+      <Filter>bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\bullet\BulletCollision\CollisionShapes\btStridingMeshInterface.cpp">
+      <Filter>bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\bullet\BulletCollision\NarrowPhaseCollision\btSubSimplexConvexCast.cpp">
+      <Filter>bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\bullet\BulletCollision\CollisionShapes\btTetrahedronShape.cpp">
+      <Filter>bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\bullet\BulletCollision\CollisionShapes\btTriangleBuffer.cpp">
+      <Filter>bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\bullet\BulletCollision\CollisionShapes\btTriangleCallback.cpp">
+      <Filter>bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\bullet\BulletCollision\CollisionShapes\btTriangleIndexVertexArray.cpp">
+      <Filter>bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\bullet\BulletCollision\CollisionShapes\btTriangleIndexVertexMaterialArray.cpp">
+      <Filter>bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\bullet\BulletCollision\CollisionShapes\btTriangleMesh.cpp">
+      <Filter>bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\bullet\BulletCollision\CollisionShapes\btTriangleMeshShape.cpp">
+      <Filter>bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\bullet\BulletCollision\Gimpact\btTriangleShapeEx.cpp">
+      <Filter>bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\bullet\BulletDynamics\ConstraintSolver\btTypedConstraint.cpp">
+      <Filter>bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\bullet\BulletCollision\CollisionShapes\btUniformScalingShape.cpp">
+      <Filter>bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\bullet\BulletCollision\CollisionDispatch\btUnionFind.cpp">
+      <Filter>bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\bullet\BulletDynamics\ConstraintSolver\btUniversalConstraint.cpp">
+      <Filter>bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\bullet\LinearMath\btVector3.cpp">
+      <Filter>bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\bullet\BulletCollision\NarrowPhaseCollision\btVoronoiSimplexSolver.cpp">
+      <Filter>bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\bullet\BulletDynamics\Vehicle\btWheelInfo.cpp">
+      <Filter>bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\bullet\BulletDynamics\Dynamics\Bullet-C-API.cpp">
+      <Filter>bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\bullet\BulletCollision\Gimpact\gim_box_set.cpp">
+      <Filter>bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\bullet\BulletCollision\Gimpact\gim_contact.cpp">
+      <Filter>bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\bullet\BulletCollision\Gimpact\gim_memory.cpp">
+      <Filter>bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\bullet\BulletCollision\Gimpact\gim_tri_collision.cpp">
+      <Filter>bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\bullet\BulletCollision\CollisionDispatch\SphereTriangleDetector.cpp">
+      <Filter>bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\physics\enn_collision_shape.cpp">
+      <Filter>physics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\physics\enn_constraint.cpp">
+      <Filter>physics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\physics\enn_physics_world.cpp">
+      <Filter>physics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\physics\enn_rigid_body.cpp">
+      <Filter>physics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\stan_hull\hull.cpp">
+      <Filter>stan_hull</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\post_effects\enn_post_bloom.cpp">
+      <Filter>post_effects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\post_effects\enn_post_dof.cpp">
+      <Filter>post_effects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\post_effects\enn_post_gaussian_blur.cpp">
+      <Filter>post_effects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\post_effects\enn_post_god_ray.cpp">
+      <Filter>post_effects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\post_effects\enn_post_motion_blur.cpp">
+      <Filter>post_effects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\font\util\enn_ft_font_base.cpp">
+      <Filter>font\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\font\util\enn_ft_font_mgr.cpp">
+      <Filter>font\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\font\util\enn_ft_font_record.cpp">
+      <Filter>font\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\font\util\enn_ft_font_rot_record.cpp">
+      <Filter>font\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\font\util\enn_ft_texture_atlas.cpp">
+      <Filter>font\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\font\util\enn_ft_texture_font.cpp">
+      <Filter>font\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\font\util\enn_ft_texture_font_mgr.cpp">
+      <Filter>font\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\font\util\enn_ft_texture_glyph.cpp">
+      <Filter>font\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\font\freetype2\src\autofit\autofit.c">
+      <Filter>font\freetype2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\font\freetype2\src\bdf\bdf.c">
+      <Filter>font\freetype2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\font\freetype2\src\cff\cff.c">
+      <Filter>font\freetype2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\font\freetype2\src\base\ftbase.c">
+      <Filter>font\freetype2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\font\freetype2\src\base\ftbitmap.c">
+      <Filter>font\freetype2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\font\freetype2\src\cache\ftccache.c">
+      <Filter>font\freetype2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\font\freetype2\src\base\ftfstype.c">
+      <Filter>font\freetype2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\font\freetype2\src\base\ftgasp.c">
+      <Filter>font\freetype2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\font\freetype2\src\base\ftglyph.c">
+      <Filter>font\freetype2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\font\freetype2\src\smooth\ftgrays.c">
+      <Filter>font\freetype2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\font\freetype2\src\gzip\ftgzip.c">
+      <Filter>font\freetype2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\font\freetype2\src\base\ftinit.c">
+      <Filter>font\freetype2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\font\freetype2\src\lzw\ftlzw.c">
+      <Filter>font\freetype2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\font\freetype2\src\smooth\ftsmooth.c">
+      <Filter>font\freetype2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\font\freetype2\src\base\ftstroke.c">
+      <Filter>font\freetype2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\font\freetype2\src\base\ftsystem.c">
+      <Filter>font\freetype2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\font\freetype2\src\base\ftbbox.c">
+      <Filter>font\freetype2\FT_MODULES</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\font\freetype2\src\base\ftgxval.c">
+      <Filter>font\freetype2\FT_MODULES</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\font\freetype2\src\base\ftlcdfil.c">
+      <Filter>font\freetype2\FT_MODULES</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\font\freetype2\src\base\ftmm.c">
+      <Filter>font\freetype2\FT_MODULES</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\font\freetype2\src\base\ftotval.c">
+      <Filter>font\freetype2\FT_MODULES</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\font\freetype2\src\base\ftpatent.c">
+      <Filter>font\freetype2\FT_MODULES</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\font\freetype2\src\base\ftpfr.c">
+      <Filter>font\freetype2\FT_MODULES</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\font\freetype2\src\base\ftsynth.c">
+      <Filter>font\freetype2\FT_MODULES</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\font\freetype2\src\base\fttype1.c">
+      <Filter>font\freetype2\FT_MODULES</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\font\freetype2\src\base\ftwinfnt.c">
+      <Filter>font\freetype2\FT_MODULES</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\font\freetype2\src\base\ftxf86.c">
+      <Filter>font\freetype2\FT_MODULES</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\font\freetype2\src\pcf\pcf.c">
+      <Filter>font\freetype2\FT_MODULES</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\font\freetype2\src\pfr\pfr.c">
+      <Filter>font\freetype2\FT_MODULES</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\font\freetype2\src\psaux\psaux.c">
+      <Filter>font\freetype2\FT_MODULES</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\font\freetype2\src\pshinter\pshinter.c">
+      <Filter>font\freetype2\FT_MODULES</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\font\freetype2\src\psnames\psmodule.c">
+      <Filter>font\freetype2\FT_MODULES</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\font\freetype2\src\raster\raster.c">
+      <Filter>font\freetype2\FT_MODULES</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\font\freetype2\src\sfnt\sfnt.c">
+      <Filter>font\freetype2\FT_MODULES</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\font\freetype2\src\truetype\truetype.c">
+      <Filter>font\freetype2\FT_MODULES</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\font\freetype2\src\type1\type1.c">
+      <Filter>font\freetype2\FT_MODULES</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\font\freetype2\src\cid\type1cid.c">
+      <Filter>font\freetype2\FT_MODULES</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\font\freetype2\src\type42\type42.c">
+      <Filter>font\freetype2\FT_MODULES</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\font\freetype2\src\winfonts\winfnt.c">
+      <Filter>font\freetype2\FT_MODULES</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\profiler\enn_profiler.cpp">
+      <Filter>profiler</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\src\math\enn_plane_bounded_volume.h">
+      <Filter>math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\enn.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\enn_animation.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\enn_auto_name_manager.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\enn_axis_aligned_box.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\enn_begin_pass.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\enn_camera.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\enn_camera_node.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\enn_collision_shape.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\enn_color.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\enn_config.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\enn_constraint.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\enn_default_effect_template.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\enn_deserializer.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\enn_effect_template.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\enn_effect_template_manager.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\enn_end_pass.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\enn_file.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\enn_file_system.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\enn_flags.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\enn_forward_effect_template.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\enn_frustum.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\enn_ft_font_base.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\enn_ft_font_mgr.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\enn_ft_font_record.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\enn_ft_font_rot_record.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\enn_ft_headers.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\enn_ft_texture_atlas.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\enn_ft_texture_font.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\enn_ft_texture_font_mgr.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\enn_ft_texture_glyph.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\enn_gbuffer_effect_template.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\enn_gbuffer_pass.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\enn_general_render_pass.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\enn_gl.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\enn_gl_conv.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\enn_gl_frame_buffer.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\enn_gl_gpu_buffer.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\enn_gl_ib.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\enn_gl_interface.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\enn_gl_program.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\enn_gl_render_buffer.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\enn_gl_render_system.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\enn_gl_render_target.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\enn_gl_rtt_pool.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\enn_gl_texture_obj.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\enn_gl_vb.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\enn_helper_pass.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\enn_image.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\enn_io_headers.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\enn_iterator.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\enn_jo_jpeg.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\enn_light.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\enn_light_buffer_pass.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\enn_light_node.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\enn_litacc_effect_template.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\enn_material.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\enn_math.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\enn_math_def.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\enn_matrix3.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\enn_matrix4.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\enn_memory.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\enn_memory_alloc.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\enn_memory_buffer.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\enn_memory_track.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\enn_mesh.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\enn_mesh_fullscreen_creator.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\enn_mesh_manager.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\enn_mesh_manual_creator.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\enn_mesh_mqo_txt_creator.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\enn_mesh_node.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\enn_mesh_poly_creator.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\enn_mesh_screen_mesh.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\enn_msg_id.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\enn_msg_queue.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\enn_node.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\enn_node_def.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\enn_noncopyable.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\enn_object_aligned_box.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\enn_object_recycle.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\enn_os_headers.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\enn_physics_utils.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\enn_physics_world.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\enn_plane.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\enn_plane_bounded_volume.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\enn_plane_reflect_pass.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\enn_platform.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\enn_platform_headers.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\enn_post_block.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\enn_post_bloom.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\enn_post_dof.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\enn_post_gaussian_blur.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\enn_post_god_ray.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\enn_post_motion_blur.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\enn_post_system_pass.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\enn_pre_z_pass.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\enn_profiler.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\enn_quaternion.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\enn_ray.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\enn_rect.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\enn_render_def.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\enn_render_pass_base.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\enn_render_pipe.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\enn_renderable.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\enn_res_ptr.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\enn_resource.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\enn_resource_manager.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\enn_rigid_body.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\enn_root.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\enn_rtti.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\enn_scattering_sky_pass.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\enn_scene_find.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\enn_scene_manager.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\enn_scene_node.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\enn_serializer.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\enn_shadow.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\enn_shadow_pre_pass.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\enn_shadowpre_effect_template.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\enn_shared_ptr.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\enn_simple_ssao_pass.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\enn_singleton.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\enn_skybox_pass.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\enn_skybox_scene_data.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\enn_skydome_pass.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\enn_sphere.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\enn_stb_image.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\enn_stb_image_write.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\enn_stb_vorbis.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\enn_std_header.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\enn_std_types.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\enn_string_util.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\enn_system_platform.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\enn_terrain.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\enn_texture.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\enn_texture_manager.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\enn_thread.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\enn_timer.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\enn_uirect_effect_template.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\enn_vector2.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\enn_vector3.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\enn_vector4.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\enn_viewport.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\enn_water_pass.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\enn_water_plane.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\enn_water_plane_node.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\enn_windows_platform.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\enn_work_queue.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\GLee.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\hull.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vld.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\vldapi.h">
+      <Filter>include</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

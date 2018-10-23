@@ -1,0 +1,534 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{F57EEC0C-E735-4708-A4FC-88291C54BBE4}</ProjectGuid>
+    <RootNamespace>Enn</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.15063.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>15.0.27924.0</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(ENN_ROOT)\include\freetype2;$(ENN_ROOT)\src\bullet;$(ENN_ROOT)\include;$(ENN_ROOT)\include\pthread_win32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;PTW32_STATIC_LIB;ENN_STATIC;FT2_BUILD_LIBRARY;_TIMESPEC_DEFINED;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <ProgramDataBaseFileName>$(TargetDir)\vc90.pdb</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Lib>
+      <AdditionalDependencies>opengl32.lib;winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>$(ENN_ROOT)\include;$(ENN_ROOT)\include\pthread_win32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;PTW32_STATIC_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Lib>
+      <AdditionalDependencies>opengl32.lib;winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\bullet\BulletCollision\BroadphaseCollision\btAxisSweep3.cpp" />
+    <ClCompile Include="..\..\src\bullet\BulletCollision\BroadphaseCollision\btBroadphaseProxy.cpp" />
+    <ClCompile Include="..\..\src\bullet\BulletCollision\BroadphaseCollision\btCollisionAlgorithm.cpp" />
+    <ClCompile Include="..\..\src\bullet\BulletCollision\BroadphaseCollision\btDbvt.cpp" />
+    <ClCompile Include="..\..\src\bullet\BulletCollision\BroadphaseCollision\btDbvtBroadphase.cpp" />
+    <ClCompile Include="..\..\src\bullet\BulletCollision\BroadphaseCollision\btDispatcher.cpp" />
+    <ClCompile Include="..\..\src\bullet\BulletCollision\BroadphaseCollision\btMultiSapBroadphase.cpp" />
+    <ClCompile Include="..\..\src\bullet\BulletCollision\BroadphaseCollision\btOverlappingPairCache.cpp" />
+    <ClCompile Include="..\..\src\bullet\BulletCollision\BroadphaseCollision\btQuantizedBvh.cpp" />
+    <ClCompile Include="..\..\src\bullet\BulletCollision\BroadphaseCollision\btSimpleBroadphase.cpp" />
+    <ClCompile Include="..\..\src\bullet\BulletCollision\CollisionDispatch\btActivatingCollisionAlgorithm.cpp" />
+    <ClCompile Include="..\..\src\bullet\BulletCollision\CollisionDispatch\btBox2dBox2dCollisionAlgorithm.cpp" />
+    <ClCompile Include="..\..\src\bullet\BulletCollision\CollisionDispatch\btBoxBoxCollisionAlgorithm.cpp" />
+    <ClCompile Include="..\..\src\bullet\BulletCollision\CollisionDispatch\btBoxBoxDetector.cpp" />
+    <ClCompile Include="..\..\src\bullet\BulletCollision\CollisionDispatch\btCollisionDispatcher.cpp" />
+    <ClCompile Include="..\..\src\bullet\BulletCollision\CollisionDispatch\btCollisionObject.cpp" />
+    <ClCompile Include="..\..\src\bullet\BulletCollision\CollisionDispatch\btCollisionWorld.cpp" />
+    <ClCompile Include="..\..\src\bullet\BulletCollision\CollisionDispatch\btCompoundCollisionAlgorithm.cpp" />
+    <ClCompile Include="..\..\src\bullet\BulletCollision\CollisionDispatch\btConvex2dConvex2dAlgorithm.cpp" />
+    <ClCompile Include="..\..\src\bullet\BulletCollision\CollisionDispatch\btConvexConcaveCollisionAlgorithm.cpp" />
+    <ClCompile Include="..\..\src\bullet\BulletCollision\CollisionDispatch\btConvexConvexAlgorithm.cpp" />
+    <ClCompile Include="..\..\src\bullet\BulletCollision\CollisionDispatch\btConvexPlaneCollisionAlgorithm.cpp" />
+    <ClCompile Include="..\..\src\bullet\BulletCollision\CollisionDispatch\btDefaultCollisionConfiguration.cpp" />
+    <ClCompile Include="..\..\src\bullet\BulletCollision\CollisionDispatch\btEmptyCollisionAlgorithm.cpp" />
+    <ClCompile Include="..\..\src\bullet\BulletCollision\CollisionDispatch\btGhostObject.cpp" />
+    <ClCompile Include="..\..\src\bullet\BulletCollision\CollisionDispatch\btInternalEdgeUtility.cpp" />
+    <ClCompile Include="..\..\src\bullet\BulletCollision\CollisionDispatch\btManifoldResult.cpp" />
+    <ClCompile Include="..\..\src\bullet\BulletCollision\CollisionDispatch\btSimulationIslandManager.cpp" />
+    <ClCompile Include="..\..\src\bullet\BulletCollision\CollisionDispatch\btSphereBoxCollisionAlgorithm.cpp" />
+    <ClCompile Include="..\..\src\bullet\BulletCollision\CollisionDispatch\btSphereSphereCollisionAlgorithm.cpp" />
+    <ClCompile Include="..\..\src\bullet\BulletCollision\CollisionDispatch\btSphereTriangleCollisionAlgorithm.cpp" />
+    <ClCompile Include="..\..\src\bullet\BulletCollision\CollisionDispatch\btUnionFind.cpp" />
+    <ClCompile Include="..\..\src\bullet\BulletCollision\CollisionDispatch\SphereTriangleDetector.cpp" />
+    <ClCompile Include="..\..\src\bullet\BulletCollision\CollisionShapes\btBox2dShape.cpp" />
+    <ClCompile Include="..\..\src\bullet\BulletCollision\CollisionShapes\btBoxShape.cpp" />
+    <ClCompile Include="..\..\src\bullet\BulletCollision\CollisionShapes\btBvhTriangleMeshShape.cpp" />
+    <ClCompile Include="..\..\src\bullet\BulletCollision\CollisionShapes\btCapsuleShape.cpp" />
+    <ClCompile Include="..\..\src\bullet\BulletCollision\CollisionShapes\btCollisionShape.cpp" />
+    <ClCompile Include="..\..\src\bullet\BulletCollision\CollisionShapes\btCompoundShape.cpp" />
+    <ClCompile Include="..\..\src\bullet\BulletCollision\CollisionShapes\btConcaveShape.cpp" />
+    <ClCompile Include="..\..\src\bullet\BulletCollision\CollisionShapes\btConeShape.cpp" />
+    <ClCompile Include="..\..\src\bullet\BulletCollision\CollisionShapes\btConvex2dShape.cpp" />
+    <ClCompile Include="..\..\src\bullet\BulletCollision\CollisionShapes\btConvexHullShape.cpp" />
+    <ClCompile Include="..\..\src\bullet\BulletCollision\CollisionShapes\btConvexInternalShape.cpp" />
+    <ClCompile Include="..\..\src\bullet\BulletCollision\CollisionShapes\btConvexPointCloudShape.cpp" />
+    <ClCompile Include="..\..\src\bullet\BulletCollision\CollisionShapes\btConvexPolyhedron.cpp" />
+    <ClCompile Include="..\..\src\bullet\BulletCollision\CollisionShapes\btConvexShape.cpp" />
+    <ClCompile Include="..\..\src\bullet\BulletCollision\CollisionShapes\btConvexTriangleMeshShape.cpp" />
+    <ClCompile Include="..\..\src\bullet\BulletCollision\CollisionShapes\btCylinderShape.cpp" />
+    <ClCompile Include="..\..\src\bullet\BulletCollision\CollisionShapes\btEmptyShape.cpp" />
+    <ClCompile Include="..\..\src\bullet\BulletCollision\CollisionShapes\btHeightfieldTerrainShape.cpp" />
+    <ClCompile Include="..\..\src\bullet\BulletCollision\CollisionShapes\btMinkowskiSumShape.cpp" />
+    <ClCompile Include="..\..\src\bullet\BulletCollision\CollisionShapes\btMultimaterialTriangleMeshShape.cpp" />
+    <ClCompile Include="..\..\src\bullet\BulletCollision\CollisionShapes\btMultiSphereShape.cpp" />
+    <ClCompile Include="..\..\src\bullet\BulletCollision\CollisionShapes\btOptimizedBvh.cpp" />
+    <ClCompile Include="..\..\src\bullet\BulletCollision\CollisionShapes\btPolyhedralConvexShape.cpp" />
+    <ClCompile Include="..\..\src\bullet\BulletCollision\CollisionShapes\btScaledBvhTriangleMeshShape.cpp" />
+    <ClCompile Include="..\..\src\bullet\BulletCollision\CollisionShapes\btShapeHull.cpp" />
+    <ClCompile Include="..\..\src\bullet\BulletCollision\CollisionShapes\btSphereShape.cpp" />
+    <ClCompile Include="..\..\src\bullet\BulletCollision\CollisionShapes\btStaticPlaneShape.cpp" />
+    <ClCompile Include="..\..\src\bullet\BulletCollision\CollisionShapes\btStridingMeshInterface.cpp" />
+    <ClCompile Include="..\..\src\bullet\BulletCollision\CollisionShapes\btTetrahedronShape.cpp" />
+    <ClCompile Include="..\..\src\bullet\BulletCollision\CollisionShapes\btTriangleBuffer.cpp" />
+    <ClCompile Include="..\..\src\bullet\BulletCollision\CollisionShapes\btTriangleCallback.cpp" />
+    <ClCompile Include="..\..\src\bullet\BulletCollision\CollisionShapes\btTriangleIndexVertexArray.cpp" />
+    <ClCompile Include="..\..\src\bullet\BulletCollision\CollisionShapes\btTriangleIndexVertexMaterialArray.cpp" />
+    <ClCompile Include="..\..\src\bullet\BulletCollision\CollisionShapes\btTriangleMesh.cpp" />
+    <ClCompile Include="..\..\src\bullet\BulletCollision\CollisionShapes\btTriangleMeshShape.cpp" />
+    <ClCompile Include="..\..\src\bullet\BulletCollision\CollisionShapes\btUniformScalingShape.cpp" />
+    <ClCompile Include="..\..\src\bullet\BulletCollision\Gimpact\btContactProcessing.cpp" />
+    <ClCompile Include="..\..\src\bullet\BulletCollision\Gimpact\btGenericPoolAllocator.cpp" />
+    <ClCompile Include="..\..\src\bullet\BulletCollision\Gimpact\btGImpactBvh.cpp" />
+    <ClCompile Include="..\..\src\bullet\BulletCollision\Gimpact\btGImpactCollisionAlgorithm.cpp" />
+    <ClCompile Include="..\..\src\bullet\BulletCollision\Gimpact\btGImpactQuantizedBvh.cpp" />
+    <ClCompile Include="..\..\src\bullet\BulletCollision\Gimpact\btGImpactShape.cpp" />
+    <ClCompile Include="..\..\src\bullet\BulletCollision\Gimpact\btTriangleShapeEx.cpp" />
+    <ClCompile Include="..\..\src\bullet\BulletCollision\Gimpact\gim_box_set.cpp" />
+    <ClCompile Include="..\..\src\bullet\BulletCollision\Gimpact\gim_contact.cpp" />
+    <ClCompile Include="..\..\src\bullet\BulletCollision\Gimpact\gim_memory.cpp" />
+    <ClCompile Include="..\..\src\bullet\BulletCollision\Gimpact\gim_tri_collision.cpp" />
+    <ClCompile Include="..\..\src\bullet\BulletCollision\NarrowPhaseCollision\btContinuousConvexCollision.cpp" />
+    <ClCompile Include="..\..\src\bullet\BulletCollision\NarrowPhaseCollision\btConvexCast.cpp" />
+    <ClCompile Include="..\..\src\bullet\BulletCollision\NarrowPhaseCollision\btGjkConvexCast.cpp" />
+    <ClCompile Include="..\..\src\bullet\BulletCollision\NarrowPhaseCollision\btGjkEpa2.cpp" />
+    <ClCompile Include="..\..\src\bullet\BulletCollision\NarrowPhaseCollision\btGjkEpaPenetrationDepthSolver.cpp" />
+    <ClCompile Include="..\..\src\bullet\BulletCollision\NarrowPhaseCollision\btGjkPairDetector.cpp" />
+    <ClCompile Include="..\..\src\bullet\BulletCollision\NarrowPhaseCollision\btMinkowskiPenetrationDepthSolver.cpp" />
+    <ClCompile Include="..\..\src\bullet\BulletCollision\NarrowPhaseCollision\btPersistentManifold.cpp" />
+    <ClCompile Include="..\..\src\bullet\BulletCollision\NarrowPhaseCollision\btPolyhedralContactClipping.cpp" />
+    <ClCompile Include="..\..\src\bullet\BulletCollision\NarrowPhaseCollision\btRaycastCallback.cpp" />
+    <ClCompile Include="..\..\src\bullet\BulletCollision\NarrowPhaseCollision\btSubSimplexConvexCast.cpp" />
+    <ClCompile Include="..\..\src\bullet\BulletCollision\NarrowPhaseCollision\btVoronoiSimplexSolver.cpp" />
+    <ClCompile Include="..\..\src\bullet\BulletDynamics\Character\btKinematicCharacterController.cpp" />
+    <ClCompile Include="..\..\src\bullet\BulletDynamics\ConstraintSolver\btConeTwistConstraint.cpp" />
+    <ClCompile Include="..\..\src\bullet\BulletDynamics\ConstraintSolver\btContactConstraint.cpp" />
+    <ClCompile Include="..\..\src\bullet\BulletDynamics\ConstraintSolver\btGearConstraint.cpp" />
+    <ClCompile Include="..\..\src\bullet\BulletDynamics\ConstraintSolver\btGeneric6DofConstraint.cpp" />
+    <ClCompile Include="..\..\src\bullet\BulletDynamics\ConstraintSolver\btGeneric6DofSpringConstraint.cpp" />
+    <ClCompile Include="..\..\src\bullet\BulletDynamics\ConstraintSolver\btHinge2Constraint.cpp" />
+    <ClCompile Include="..\..\src\bullet\BulletDynamics\ConstraintSolver\btHingeConstraint.cpp" />
+    <ClCompile Include="..\..\src\bullet\BulletDynamics\ConstraintSolver\btPoint2PointConstraint.cpp" />
+    <ClCompile Include="..\..\src\bullet\BulletDynamics\ConstraintSolver\btSequentialImpulseConstraintSolver.cpp" />
+    <ClCompile Include="..\..\src\bullet\BulletDynamics\ConstraintSolver\btSliderConstraint.cpp" />
+    <ClCompile Include="..\..\src\bullet\BulletDynamics\ConstraintSolver\btSolve2LinearConstraint.cpp" />
+    <ClCompile Include="..\..\src\bullet\BulletDynamics\ConstraintSolver\btTypedConstraint.cpp" />
+    <ClCompile Include="..\..\src\bullet\BulletDynamics\ConstraintSolver\btUniversalConstraint.cpp" />
+    <ClCompile Include="..\..\src\bullet\BulletDynamics\Dynamics\btDiscreteDynamicsWorld.cpp" />
+    <ClCompile Include="..\..\src\bullet\BulletDynamics\Dynamics\btRigidBody.cpp" />
+    <ClCompile Include="..\..\src\bullet\BulletDynamics\Dynamics\btSimpleDynamicsWorld.cpp" />
+    <ClCompile Include="..\..\src\bullet\BulletDynamics\Dynamics\Bullet-C-API.cpp" />
+    <ClCompile Include="..\..\src\bullet\BulletDynamics\Vehicle\btRaycastVehicle.cpp" />
+    <ClCompile Include="..\..\src\bullet\BulletDynamics\Vehicle\btWheelInfo.cpp" />
+    <ClCompile Include="..\..\src\bullet\BulletSoftBody\btDefaultSoftBodySolver.cpp" />
+    <ClCompile Include="..\..\src\bullet\BulletSoftBody\btSoftBody.cpp" />
+    <ClCompile Include="..\..\src\bullet\BulletSoftBody\btSoftBodyConcaveCollisionAlgorithm.cpp" />
+    <ClCompile Include="..\..\src\bullet\BulletSoftBody\btSoftBodyHelpers.cpp" />
+    <ClCompile Include="..\..\src\bullet\BulletSoftBody\btSoftBodyRigidBodyCollisionConfiguration.cpp" />
+    <ClCompile Include="..\..\src\bullet\BulletSoftBody\btSoftRigidCollisionAlgorithm.cpp" />
+    <ClCompile Include="..\..\src\bullet\BulletSoftBody\btSoftRigidDynamicsWorld.cpp" />
+    <ClCompile Include="..\..\src\bullet\BulletSoftBody\btSoftSoftCollisionAlgorithm.cpp" />
+    <ClCompile Include="..\..\src\bullet\LinearMath\btAlignedAllocator.cpp" />
+    <ClCompile Include="..\..\src\bullet\LinearMath\btConvexHull.cpp" />
+    <ClCompile Include="..\..\src\bullet\LinearMath\btConvexHullComputer.cpp" />
+    <ClCompile Include="..\..\src\bullet\LinearMath\btGeometryUtil.cpp" />
+    <ClCompile Include="..\..\src\bullet\LinearMath\btPolarDecomposition.cpp" />
+    <ClCompile Include="..\..\src\bullet\LinearMath\btQuickprof.cpp" />
+    <ClCompile Include="..\..\src\bullet\LinearMath\btSerializer.cpp" />
+    <ClCompile Include="..\..\src\bullet\LinearMath\btVector3.cpp" />
+    <ClCompile Include="..\..\src\font\freetype2\src\autofit\autofit.c" />
+    <ClCompile Include="..\..\src\font\freetype2\src\base\ftbase.c" />
+    <ClCompile Include="..\..\src\font\freetype2\src\base\ftbbox.c" />
+    <ClCompile Include="..\..\src\font\freetype2\src\base\ftbitmap.c" />
+    <ClCompile Include="..\..\src\font\freetype2\src\base\ftfstype.c" />
+    <ClCompile Include="..\..\src\font\freetype2\src\base\ftgasp.c" />
+    <ClCompile Include="..\..\src\font\freetype2\src\base\ftglyph.c" />
+    <ClCompile Include="..\..\src\font\freetype2\src\base\ftgxval.c" />
+    <ClCompile Include="..\..\src\font\freetype2\src\base\ftinit.c" />
+    <ClCompile Include="..\..\src\font\freetype2\src\base\ftlcdfil.c" />
+    <ClCompile Include="..\..\src\font\freetype2\src\base\ftmm.c" />
+    <ClCompile Include="..\..\src\font\freetype2\src\base\ftotval.c" />
+    <ClCompile Include="..\..\src\font\freetype2\src\base\ftpatent.c" />
+    <ClCompile Include="..\..\src\font\freetype2\src\base\ftpfr.c" />
+    <ClCompile Include="..\..\src\font\freetype2\src\base\ftstroke.c" />
+    <ClCompile Include="..\..\src\font\freetype2\src\base\ftsynth.c" />
+    <ClCompile Include="..\..\src\font\freetype2\src\base\ftsystem.c" />
+    <ClCompile Include="..\..\src\font\freetype2\src\base\fttype1.c" />
+    <ClCompile Include="..\..\src\font\freetype2\src\base\ftwinfnt.c" />
+    <ClCompile Include="..\..\src\font\freetype2\src\base\ftxf86.c" />
+    <ClCompile Include="..\..\src\font\freetype2\src\bdf\bdf.c" />
+    <ClCompile Include="..\..\src\font\freetype2\src\cache\ftccache.c" />
+    <ClCompile Include="..\..\src\font\freetype2\src\cff\cff.c" />
+    <ClCompile Include="..\..\src\font\freetype2\src\cid\type1cid.c" />
+    <ClCompile Include="..\..\src\font\freetype2\src\gzip\ftgzip.c" />
+    <ClCompile Include="..\..\src\font\freetype2\src\lzw\ftlzw.c" />
+    <ClCompile Include="..\..\src\font\freetype2\src\pcf\pcf.c" />
+    <ClCompile Include="..\..\src\font\freetype2\src\pfr\pfr.c" />
+    <ClCompile Include="..\..\src\font\freetype2\src\psaux\psaux.c" />
+    <ClCompile Include="..\..\src\font\freetype2\src\pshinter\pshinter.c" />
+    <ClCompile Include="..\..\src\font\freetype2\src\psnames\psmodule.c" />
+    <ClCompile Include="..\..\src\font\freetype2\src\raster\raster.c" />
+    <ClCompile Include="..\..\src\font\freetype2\src\sfnt\sfnt.c" />
+    <ClCompile Include="..\..\src\font\freetype2\src\smooth\ftgrays.c" />
+    <ClCompile Include="..\..\src\font\freetype2\src\smooth\ftsmooth.c" />
+    <ClCompile Include="..\..\src\font\freetype2\src\truetype\truetype.c" />
+    <ClCompile Include="..\..\src\font\freetype2\src\type1\type1.c" />
+    <ClCompile Include="..\..\src\font\freetype2\src\type42\type42.c" />
+    <ClCompile Include="..\..\src\font\freetype2\src\winfonts\winfnt.c" />
+    <ClCompile Include="..\..\src\font\util\enn_ft_font_base.cpp" />
+    <ClCompile Include="..\..\src\font\util\enn_ft_font_mgr.cpp" />
+    <ClCompile Include="..\..\src\font\util\enn_ft_font_record.cpp" />
+    <ClCompile Include="..\..\src\font\util\enn_ft_font_rot_record.cpp" />
+    <ClCompile Include="..\..\src\font\util\enn_ft_texture_atlas.cpp" />
+    <ClCompile Include="..\..\src\font\util\enn_ft_texture_font.cpp" />
+    <ClCompile Include="..\..\src\font\util\enn_ft_texture_font_mgr.cpp" />
+    <ClCompile Include="..\..\src\font\util\enn_ft_texture_glyph.cpp" />
+    <ClCompile Include="..\..\src\global\enn_root.cpp" />
+    <ClCompile Include="..\..\src\gl_render_system\enn_gl_frame_buffer.cpp" />
+    <ClCompile Include="..\..\src\gl_render_system\enn_gl_gpu_buffer.cpp" />
+    <ClCompile Include="..\..\src\gl_render_system\enn_gl_ib.cpp" />
+    <ClCompile Include="..\..\src\gl_render_system\enn_gl_interface.cpp" />
+    <ClCompile Include="..\..\src\gl_render_system\enn_gl_program.cpp" />
+    <ClCompile Include="..\..\src\gl_render_system\enn_gl_render_buffer.cpp" />
+    <ClCompile Include="..\..\src\gl_render_system\enn_gl_render_system.cpp" />
+    <ClCompile Include="..\..\src\gl_render_system\enn_gl_render_target.cpp" />
+    <ClCompile Include="..\..\src\gl_render_system\enn_gl_rtt_pool.cpp" />
+    <ClCompile Include="..\..\src\gl_render_system\enn_gl_texture_obj.cpp" />
+    <ClCompile Include="..\..\src\gl_render_system\enn_gl_vb.cpp" />
+    <ClCompile Include="..\..\src\gl_render_system\GLee5_4\GLee.c" />
+    <ClCompile Include="..\..\src\image\enn_image.cpp" />
+    <ClCompile Include="..\..\src\image\enn_jo_jpeg.cpp" />
+    <ClCompile Include="..\..\src\image\enn_stb_image.c" />
+    <ClCompile Include="..\..\src\image\enn_stb_image_write.c" />
+    <ClCompile Include="..\..\src\image\enn_stb_vorbis.c" />
+    <ClCompile Include="..\..\src\io\enn_deserializer.cpp" />
+    <ClCompile Include="..\..\src\io\enn_file.cpp" />
+    <ClCompile Include="..\..\src\io\enn_file_system.cpp" />
+    <ClCompile Include="..\..\src\io\enn_memory_buffer.cpp" />
+    <ClCompile Include="..\..\src\io\enn_serializer.cpp" />
+    <ClCompile Include="..\..\src\math\enn_axis_aligned_box.cpp" />
+    <ClCompile Include="..\..\src\math\enn_color.cpp" />
+    <ClCompile Include="..\..\src\math\enn_frustum.cpp" />
+    <ClCompile Include="..\..\src\math\enn_math_def.cpp" />
+    <ClCompile Include="..\..\src\math\enn_matrix3.cpp" />
+    <ClCompile Include="..\..\src\math\enn_matrix4.cpp" />
+    <ClCompile Include="..\..\src\math\enn_object_aligned_box.cpp" />
+    <ClCompile Include="..\..\src\math\enn_plane.cpp" />
+    <ClCompile Include="..\..\src\math\enn_plane_bounded_volume.cpp" />
+    <ClCompile Include="..\..\src\math\enn_quaternion.cpp" />
+    <ClCompile Include="..\..\src\math\enn_ray.cpp" />
+    <ClCompile Include="..\..\src\math\enn_rect.cpp" />
+    <ClCompile Include="..\..\src\math\enn_sphere.cpp" />
+    <ClCompile Include="..\..\src\math\enn_string_util.cpp" />
+    <ClCompile Include="..\..\src\math\enn_vector2.cpp" />
+    <ClCompile Include="..\..\src\math\enn_vector3.cpp" />
+    <ClCompile Include="..\..\src\math\enn_vector4.cpp" />
+    <ClCompile Include="..\..\src\math\poly2tri\common\shapes.cc" />
+    <ClCompile Include="..\..\src\math\poly2tri\sweep\advancing_front.cc" />
+    <ClCompile Include="..\..\src\math\poly2tri\sweep\cdt.cc" />
+    <ClCompile Include="..\..\src\math\poly2tri\sweep\sweep.cc" />
+    <ClCompile Include="..\..\src\math\poly2tri\sweep\sweep_context.cc" />
+    <ClCompile Include="..\..\src\physics\enn_collision_shape.cpp" />
+    <ClCompile Include="..\..\src\physics\enn_constraint.cpp" />
+    <ClCompile Include="..\..\src\physics\enn_physics_world.cpp" />
+    <ClCompile Include="..\..\src\physics\enn_rigid_body.cpp" />
+    <ClCompile Include="..\..\src\platform\enn_memory.cpp" />
+    <ClCompile Include="..\..\src\platform\enn_memory_alloc.cpp" />
+    <ClCompile Include="..\..\src\platform\enn_memory_track.cpp" />
+    <ClCompile Include="..\..\src\platform\enn_msg_queue.cpp" />
+    <ClCompile Include="..\..\src\platform\enn_object_recycle.cpp" />
+    <ClCompile Include="..\..\src\platform\enn_thread.cpp" />
+    <ClCompile Include="..\..\src\platform\enn_timer.cpp" />
+    <ClCompile Include="..\..\src\platform\enn_windows_platform.cpp" />
+    <ClCompile Include="..\..\src\platform\enn_work_queue.cpp" />
+    <ClCompile Include="..\..\src\platform\pthread_win32\pthread.c" />
+    <ClCompile Include="..\..\src\post_effects\enn_post_bloom.cpp" />
+    <ClCompile Include="..\..\src\post_effects\enn_post_dof.cpp" />
+    <ClCompile Include="..\..\src\post_effects\enn_post_gaussian_blur.cpp" />
+    <ClCompile Include="..\..\src\post_effects\enn_post_god_ray.cpp" />
+    <ClCompile Include="..\..\src\post_effects\enn_post_motion_blur.cpp" />
+    <ClCompile Include="..\..\src\profiler\enn_profiler.cpp" />
+    <ClCompile Include="..\..\src\render_pipeline\enn_begin_pass.cpp" />
+    <ClCompile Include="..\..\src\render_pipeline\enn_default_effect_template.cpp" />
+    <ClCompile Include="..\..\src\render_pipeline\enn_effect_template.cpp" />
+    <ClCompile Include="..\..\src\render_pipeline\enn_effect_template_manager.cpp" />
+    <ClCompile Include="..\..\src\render_pipeline\enn_end_pass.cpp" />
+    <ClCompile Include="..\..\src\render_pipeline\enn_forward_effect_template.cpp" />
+    <ClCompile Include="..\..\src\render_pipeline\enn_gbuffer_effect_template.cpp" />
+    <ClCompile Include="..\..\src\render_pipeline\enn_gbuffer_pass.cpp" />
+    <ClCompile Include="..\..\src\render_pipeline\enn_general_render_pass.cpp" />
+    <ClCompile Include="..\..\src\render_pipeline\enn_helper_pass.cpp" />
+    <ClCompile Include="..\..\src\render_pipeline\enn_light_buffer_pass.cpp" />
+    <ClCompile Include="..\..\src\render_pipeline\enn_litacc_effect_template.cpp" />
+    <ClCompile Include="..\..\src\render_pipeline\enn_omnidirectional_shadow_map.cpp" />
+    <ClCompile Include="..\..\src\render_pipeline\enn_plane_reflect_pass.cpp" />
+    <ClCompile Include="..\..\src\render_pipeline\enn_post_system_pass.cpp" />
+    <ClCompile Include="..\..\src\render_pipeline\enn_pre_z_pass.cpp" />
+    <ClCompile Include="..\..\src\render_pipeline\enn_render_pass_base.cpp" />
+    <ClCompile Include="..\..\src\render_pipeline\enn_render_pipe.cpp" />
+    <ClCompile Include="..\..\src\render_pipeline\enn_scattering_sky_pass.cpp" />
+    <ClCompile Include="..\..\src\render_pipeline\enn_shadowpre_effect_template.cpp" />
+    <ClCompile Include="..\..\src\render_pipeline\enn_shadow_pre_pass.cpp" />
+    <ClCompile Include="..\..\src\render_pipeline\enn_simple_ssao_pass.cpp" />
+    <ClCompile Include="..\..\src\render_pipeline\enn_skybox_pass.cpp" />
+    <ClCompile Include="..\..\src\render_pipeline\enn_skydome_pass.cpp" />
+    <ClCompile Include="..\..\src\render_pipeline\enn_uirect_effect_template.cpp" />
+    <ClCompile Include="..\..\src\render_pipeline\enn_water_pass.cpp" />
+    <ClCompile Include="..\..\src\resource\enn_animation.cpp" />
+    <ClCompile Include="..\..\src\resource\enn_material.cpp" />
+    <ClCompile Include="..\..\src\resource\enn_mesh.cpp" />
+    <ClCompile Include="..\..\src\resource\enn_mesh_fullscreen_creator.cpp" />
+    <ClCompile Include="..\..\src\resource\enn_mesh_manager.cpp" />
+    <ClCompile Include="..\..\src\resource\enn_mesh_manual_creator.cpp" />
+    <ClCompile Include="..\..\src\resource\enn_mesh_mqo_txt_creator.cpp" />
+    <ClCompile Include="..\..\src\resource\enn_mesh_poly_creator.cpp" />
+    <ClCompile Include="..\..\src\resource\enn_mesh_screen_mesh.cpp" />
+    <ClCompile Include="..\..\src\resource\enn_resource.cpp" />
+    <ClCompile Include="..\..\src\resource\enn_resource_manager.cpp" />
+    <ClCompile Include="..\..\src\resource\enn_texture.cpp" />
+    <ClCompile Include="..\..\src\resource\enn_texture_manager.cpp" />
+    <ClCompile Include="..\..\src\scene\enn_camera.cpp" />
+    <ClCompile Include="..\..\src\scene\enn_camera_node.cpp" />
+    <ClCompile Include="..\..\src\scene\enn_light.cpp" />
+    <ClCompile Include="..\..\src\scene\enn_light_node.cpp" />
+    <ClCompile Include="..\..\src\scene\enn_mesh_node.cpp" />
+    <ClCompile Include="..\..\src\scene\enn_node.cpp" />
+    <ClCompile Include="..\..\src\scene\enn_scene_find.cpp" />
+    <ClCompile Include="..\..\src\scene\enn_scene_manager.cpp" />
+    <ClCompile Include="..\..\src\scene\enn_scene_node.cpp" />
+    <ClCompile Include="..\..\src\scene\enn_shadow.cpp" />
+    <ClCompile Include="..\..\src\scene\enn_skybox_scene_data.cpp" />
+    <ClCompile Include="..\..\src\scene\enn_viewport.cpp" />
+    <ClCompile Include="..\..\src\scene\enn_water_plane.cpp" />
+    <ClCompile Include="..\..\src\scene\enn_water_plane_node.cpp" />
+    <ClCompile Include="..\..\src\stan_hull\hull.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\include\enn.h" />
+    <ClInclude Include="..\..\include\enn_animation.h" />
+    <ClInclude Include="..\..\include\enn_auto_name_manager.h" />
+    <ClInclude Include="..\..\include\enn_axis_aligned_box.h" />
+    <ClInclude Include="..\..\include\enn_begin_pass.h" />
+    <ClInclude Include="..\..\include\enn_camera.h" />
+    <ClInclude Include="..\..\include\enn_camera_node.h" />
+    <ClInclude Include="..\..\include\enn_collision_shape.h" />
+    <ClInclude Include="..\..\include\enn_color.h" />
+    <ClInclude Include="..\..\include\enn_config.h" />
+    <ClInclude Include="..\..\include\enn_constraint.h" />
+    <ClInclude Include="..\..\include\enn_default_effect_template.h" />
+    <ClInclude Include="..\..\include\enn_deserializer.h" />
+    <ClInclude Include="..\..\include\enn_effect_template.h" />
+    <ClInclude Include="..\..\include\enn_effect_template_manager.h" />
+    <ClInclude Include="..\..\include\enn_end_pass.h" />
+    <ClInclude Include="..\..\include\enn_file.h" />
+    <ClInclude Include="..\..\include\enn_file_system.h" />
+    <ClInclude Include="..\..\include\enn_flags.h" />
+    <ClInclude Include="..\..\include\enn_forward_effect_template.h" />
+    <ClInclude Include="..\..\include\enn_frustum.h" />
+    <ClInclude Include="..\..\include\enn_ft_font_base.h" />
+    <ClInclude Include="..\..\include\enn_ft_font_mgr.h" />
+    <ClInclude Include="..\..\include\enn_ft_font_record.h" />
+    <ClInclude Include="..\..\include\enn_ft_font_rot_record.h" />
+    <ClInclude Include="..\..\include\enn_ft_headers.h" />
+    <ClInclude Include="..\..\include\enn_ft_texture_atlas.h" />
+    <ClInclude Include="..\..\include\enn_ft_texture_font.h" />
+    <ClInclude Include="..\..\include\enn_ft_texture_font_mgr.h" />
+    <ClInclude Include="..\..\include\enn_ft_texture_glyph.h" />
+    <ClInclude Include="..\..\include\enn_gbuffer_effect_template.h" />
+    <ClInclude Include="..\..\include\enn_gbuffer_pass.h" />
+    <ClInclude Include="..\..\include\enn_general_render_pass.h" />
+    <ClInclude Include="..\..\include\enn_gl.h" />
+    <ClInclude Include="..\..\include\enn_gl_conv.h" />
+    <ClInclude Include="..\..\include\enn_gl_frame_buffer.h" />
+    <ClInclude Include="..\..\include\enn_gl_gpu_buffer.h" />
+    <ClInclude Include="..\..\include\enn_gl_ib.h" />
+    <ClInclude Include="..\..\include\enn_gl_interface.h" />
+    <ClInclude Include="..\..\include\enn_gl_program.h" />
+    <ClInclude Include="..\..\include\enn_gl_render_buffer.h" />
+    <ClInclude Include="..\..\include\enn_gl_render_system.h" />
+    <ClInclude Include="..\..\include\enn_gl_render_target.h" />
+    <ClInclude Include="..\..\include\enn_gl_rtt_pool.h" />
+    <ClInclude Include="..\..\include\enn_gl_texture_obj.h" />
+    <ClInclude Include="..\..\include\enn_gl_vb.h" />
+    <ClInclude Include="..\..\include\enn_helper_pass.h" />
+    <ClInclude Include="..\..\include\enn_image.h" />
+    <ClInclude Include="..\..\include\enn_io_headers.h" />
+    <ClInclude Include="..\..\include\enn_iterator.h" />
+    <ClInclude Include="..\..\include\enn_jo_jpeg.h" />
+    <ClInclude Include="..\..\include\enn_light.h" />
+    <ClInclude Include="..\..\include\enn_light_buffer_pass.h" />
+    <ClInclude Include="..\..\include\enn_light_node.h" />
+    <ClInclude Include="..\..\include\enn_litacc_effect_template.h" />
+    <ClInclude Include="..\..\include\enn_material.h" />
+    <ClInclude Include="..\..\include\enn_math.h" />
+    <ClInclude Include="..\..\include\enn_math_def.h" />
+    <ClInclude Include="..\..\include\enn_matrix3.h" />
+    <ClInclude Include="..\..\include\enn_matrix4.h" />
+    <ClInclude Include="..\..\include\enn_memory.h" />
+    <ClInclude Include="..\..\include\enn_memory_alloc.h" />
+    <ClInclude Include="..\..\include\enn_memory_buffer.h" />
+    <ClInclude Include="..\..\include\enn_memory_track.h" />
+    <ClInclude Include="..\..\include\enn_mesh.h" />
+    <ClInclude Include="..\..\include\enn_mesh_fullscreen_creator.h" />
+    <ClInclude Include="..\..\include\enn_mesh_manager.h" />
+    <ClInclude Include="..\..\include\enn_mesh_manual_creator.h" />
+    <ClInclude Include="..\..\include\enn_mesh_mqo_txt_creator.h" />
+    <ClInclude Include="..\..\include\enn_mesh_node.h" />
+    <ClInclude Include="..\..\include\enn_mesh_poly_creator.h" />
+    <ClInclude Include="..\..\include\enn_mesh_screen_mesh.h" />
+    <ClInclude Include="..\..\include\enn_msg_id.h" />
+    <ClInclude Include="..\..\include\enn_msg_queue.h" />
+    <ClInclude Include="..\..\include\enn_node.h" />
+    <ClInclude Include="..\..\include\enn_node_def.h" />
+    <ClInclude Include="..\..\include\enn_noncopyable.h" />
+    <ClInclude Include="..\..\include\enn_object_aligned_box.h" />
+    <ClInclude Include="..\..\include\enn_object_recycle.h" />
+    <ClInclude Include="..\..\include\enn_os_headers.h" />
+    <ClInclude Include="..\..\include\enn_physics_utils.h" />
+    <ClInclude Include="..\..\include\enn_physics_world.h" />
+    <ClInclude Include="..\..\include\enn_plane.h" />
+    <ClInclude Include="..\..\include\enn_plane_bounded_volume.h" />
+    <ClInclude Include="..\..\include\enn_plane_reflect_pass.h" />
+    <ClInclude Include="..\..\include\enn_platform.h" />
+    <ClInclude Include="..\..\include\enn_platform_headers.h" />
+    <ClInclude Include="..\..\include\enn_post_block.h" />
+    <ClInclude Include="..\..\include\enn_post_bloom.h" />
+    <ClInclude Include="..\..\include\enn_post_dof.h" />
+    <ClInclude Include="..\..\include\enn_post_gaussian_blur.h" />
+    <ClInclude Include="..\..\include\enn_post_god_ray.h" />
+    <ClInclude Include="..\..\include\enn_post_motion_blur.h" />
+    <ClInclude Include="..\..\include\enn_post_system_pass.h" />
+    <ClInclude Include="..\..\include\enn_pre_z_pass.h" />
+    <ClInclude Include="..\..\include\enn_profiler.h" />
+    <ClInclude Include="..\..\include\enn_quaternion.h" />
+    <ClInclude Include="..\..\include\enn_ray.h" />
+    <ClInclude Include="..\..\include\enn_rect.h" />
+    <ClInclude Include="..\..\include\enn_renderable.h" />
+    <ClInclude Include="..\..\include\enn_render_def.h" />
+    <ClInclude Include="..\..\include\enn_render_pass_base.h" />
+    <ClInclude Include="..\..\include\enn_render_pipe.h" />
+    <ClInclude Include="..\..\include\enn_resource.h" />
+    <ClInclude Include="..\..\include\enn_resource_manager.h" />
+    <ClInclude Include="..\..\include\enn_res_ptr.h" />
+    <ClInclude Include="..\..\include\enn_rigid_body.h" />
+    <ClInclude Include="..\..\include\enn_root.h" />
+    <ClInclude Include="..\..\include\enn_rtti.h" />
+    <ClInclude Include="..\..\include\enn_scattering_sky_pass.h" />
+    <ClInclude Include="..\..\include\enn_scene_find.h" />
+    <ClInclude Include="..\..\include\enn_scene_manager.h" />
+    <ClInclude Include="..\..\include\enn_scene_node.h" />
+    <ClInclude Include="..\..\include\enn_serializer.h" />
+    <ClInclude Include="..\..\include\enn_shadow.h" />
+    <ClInclude Include="..\..\include\enn_shadowpre_effect_template.h" />
+    <ClInclude Include="..\..\include\enn_shadow_pre_pass.h" />
+    <ClInclude Include="..\..\include\enn_shared_ptr.h" />
+    <ClInclude Include="..\..\include\enn_simple_ssao_pass.h" />
+    <ClInclude Include="..\..\include\enn_singleton.h" />
+    <ClInclude Include="..\..\include\enn_skybox_pass.h" />
+    <ClInclude Include="..\..\include\enn_skybox_scene_data.h" />
+    <ClInclude Include="..\..\include\enn_skydome_pass.h" />
+    <ClInclude Include="..\..\include\enn_sphere.h" />
+    <ClInclude Include="..\..\include\enn_stb_image.h" />
+    <ClInclude Include="..\..\include\enn_stb_image_write.h" />
+    <ClInclude Include="..\..\include\enn_stb_vorbis.h" />
+    <ClInclude Include="..\..\include\enn_std_header.h" />
+    <ClInclude Include="..\..\include\enn_std_types.h" />
+    <ClInclude Include="..\..\include\enn_string_util.h" />
+    <ClInclude Include="..\..\include\enn_system_platform.h" />
+    <ClInclude Include="..\..\include\enn_terrain.h" />
+    <ClInclude Include="..\..\include\enn_texture.h" />
+    <ClInclude Include="..\..\include\enn_texture_manager.h" />
+    <ClInclude Include="..\..\include\enn_thread.h" />
+    <ClInclude Include="..\..\include\enn_timer.h" />
+    <ClInclude Include="..\..\include\enn_uirect_effect_template.h" />
+    <ClInclude Include="..\..\include\enn_vector2.h" />
+    <ClInclude Include="..\..\include\enn_vector3.h" />
+    <ClInclude Include="..\..\include\enn_vector4.h" />
+    <ClInclude Include="..\..\include\enn_viewport.h" />
+    <ClInclude Include="..\..\include\enn_water_pass.h" />
+    <ClInclude Include="..\..\include\enn_water_plane.h" />
+    <ClInclude Include="..\..\include\enn_water_plane_node.h" />
+    <ClInclude Include="..\..\include\enn_windows_platform.h" />
+    <ClInclude Include="..\..\include\enn_work_queue.h" />
+    <ClInclude Include="..\..\include\GLee.h" />
+    <ClInclude Include="..\..\include\hull.h" />
+    <ClInclude Include="..\..\include\vld.h" />
+    <ClInclude Include="..\..\include\vldapi.h" />
+    <ClInclude Include="..\..\src\math\enn_plane_bounded_volume.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

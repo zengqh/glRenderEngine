@@ -1,0 +1,44 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2019
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Enn", "Enn.vcxproj", "{F57EEC0C-E735-4708-A4FC-88291C54BBE4}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "hello_world", "..\..\samples\hello_world\hello_world.vcxproj", "{FF914D9C-2921-4670-84A6-A542D6197D6E}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "asset_importer", "..\..\samples\asset_importer\asset_importer.vcxproj", "{38E6ABAC-03E9-4718-8095-FE533AC1F7F6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+		RelWithDebInfo|Win32 = RelWithDebInfo|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F57EEC0C-E735-4708-A4FC-88291C54BBE4}.Debug|Win32.ActiveCfg = Debug|Win32
+		{F57EEC0C-E735-4708-A4FC-88291C54BBE4}.Debug|Win32.Build.0 = Debug|Win32
+		{F57EEC0C-E735-4708-A4FC-88291C54BBE4}.Release|Win32.ActiveCfg = Release|Win32
+		{F57EEC0C-E735-4708-A4FC-88291C54BBE4}.Release|Win32.Build.0 = Release|Win32
+		{F57EEC0C-E735-4708-A4FC-88291C54BBE4}.RelWithDebInfo|Win32.ActiveCfg = Release|Win32
+		{F57EEC0C-E735-4708-A4FC-88291C54BBE4}.RelWithDebInfo|Win32.Build.0 = Release|Win32
+		{FF914D9C-2921-4670-84A6-A542D6197D6E}.Debug|Win32.ActiveCfg = Debug|Win32
+		{FF914D9C-2921-4670-84A6-A542D6197D6E}.Debug|Win32.Build.0 = Debug|Win32
+		{FF914D9C-2921-4670-84A6-A542D6197D6E}.Release|Win32.ActiveCfg = Release|Win32
+		{FF914D9C-2921-4670-84A6-A542D6197D6E}.Release|Win32.Build.0 = Release|Win32
+		{FF914D9C-2921-4670-84A6-A542D6197D6E}.RelWithDebInfo|Win32.ActiveCfg = Release|Win32
+		{FF914D9C-2921-4670-84A6-A542D6197D6E}.RelWithDebInfo|Win32.Build.0 = Release|Win32
+		{38E6ABAC-03E9-4718-8095-FE533AC1F7F6}.Debug|Win32.ActiveCfg = Debug|Win32
+		{38E6ABAC-03E9-4718-8095-FE533AC1F7F6}.Debug|Win32.Build.0 = Debug|Win32
+		{38E6ABAC-03E9-4718-8095-FE533AC1F7F6}.Release|Win32.ActiveCfg = Release|Win32
+		{38E6ABAC-03E9-4718-8095-FE533AC1F7F6}.Release|Win32.Build.0 = Release|Win32
+		{38E6ABAC-03E9-4718-8095-FE533AC1F7F6}.RelWithDebInfo|Win32.ActiveCfg = Release|Win32
+		{38E6ABAC-03E9-4718-8095-FE533AC1F7F6}.RelWithDebInfo|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {ED40B21F-C2F0-4C80-A34B-03EF278D26CB}
+	EndGlobalSection
+EndGlobal
